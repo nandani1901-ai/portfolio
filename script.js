@@ -1,3 +1,7 @@
-// Automatically display the current year in the footer
+// Set the current year in the footer
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
